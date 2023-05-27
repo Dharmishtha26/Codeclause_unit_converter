@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="index.css" rel="stylesheet" >
+    <title>Unit Converter</title>
+<body>
+    <h1> UNIT CONVERTER</h1> 
+    <div class="box">
+<div class="container">
+    
+     <div id="lengthInput" class="container-field-group">
+        <div class="input-group">
+            
+            <div class="input-label">
+                <label for="fromUnit">FROM:</label>
+            </div>
+            <div class="select">
+            <select class="select-group" id="fromUnit">
+                <option selected value="Millimeter">Millimeter</option>
+                <option value="Centimeter">Centimeter</option>
+                <option value="Meter">Meter</option>
+                <option value="Kilometer">Kilometer</option>
+                <option value="Foot">Foot</option>
+                <option value="Inch">Inch</option>
+                <option value="Mile">Mile</option>
+                <option value="Yard">Yard</option>
+                <option value="Feet">Decimeter</option>
+            </select>            
+            </div>
+            </div>
+        <input type="number" id="fromLength" placeholder="Type Value" value="" min="0">
+        
+     </div> 
+    </div>
+    <hr>
+     <div id="lengthOutput" class="container-output-group">
+        <div class="Output-group">
+            <div class="Output-label">
+                <label for="toUnit">TO:</label>
+            </div>
+            <div class="select">
+            <select class="select-group" id="toUnit">
+                <option selected value="Millimeter">Millimeter</option>
+                <option value="Centimeter">Centimeter</option>
+                <option value="Meter">Meter</option>
+                <option value="Kilometer">Kilometer</option>
+                <option value="Foot">Foot</option>
+                <option value="Inch">Inch</option>
+                <option value="Mile">Mile</option>
+                <option value="Yard">Yard</option>
+                <option value="Feet">Decimeter</option>
+            </select>
+            </div>
+        </div> 
+      
+       <input readonly placeholder="Output" id="outputLength" type="number" name="to-temperature" min="0" class="tool-input-feild readonly-background">
+     </div> 
+     <hr>
+    <button onclick="RestLengthConverter()"class="reset" >Reset</button>
+    <button onclick='calculateLength()' class="calculate" id="btn1">Calculate</button>
+</div>
+<script src="formula.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
